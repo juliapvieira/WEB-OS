@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <a href="cadastrar.html"></a>
+    <div class="block"div>
+        <h1>Cadastro de Técnicos</h1>
+
+            <legend>Informações Pessoais</legend>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome" requirer><br>
+    
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" placeholder="seuemail@euamosenai.com.br" required><br>
+    
+                <label for="Senha">Senha:</label>
+                <input type="password" name="Senha" id="Senha" placeholder="Digite sua senha" required><br>
+    
+                <label for="Idade">Idade:</label>
+                <input type="number" name="Idade" id="Idade" min="18" max="99" required ><br>
+            
+                <label for="Data-nascimento:">Data nascimento:</label>
+                <input type="date" name="Data-nascimento" id="Data-nascimento" required><br>
+    
+                <label for="genero">Gênero:</label>
+                <select name="genero" id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Prefiro_nao_dizer">Prefiro não dizer</option>
+                </select><br>
+                
+                
+                <label for="Nivel">Nivel de conhecimento:</label>
+                <input type="text" name="conhecimento" id="conhecimento" list="conhecimentos">
+                <datalist id="conhecimentos">
+                    
+                    <option value="JÚNIOR">
+                        <option value="SENIOR">
+                            <option value="PLENO">
+                                
+    
+                </datalist><br><br>
+               <legend>Fala sobre sua exeperiência:</legend>
+                <textarea name="Bio" id="Bio" rows="3" 
+                placeholder="Conte um pouco sobre sua exeperiência com tecnologia...">
+                </textarea><br>
+        
+                <label for="Informações Adicionais">Informações Adicionais</label>
+                <details>
+                    <summary>O que é a Syntax.lab?</summary>
+                    <p>A SYNTAX.lab é uma plataforma de gestão de serviços que ajuda empresas de manutenção a organizar Ordens de Serviço, técnicos e clientes em um só lugar.</p>
+                </details>
+                 <p><mark>Atenção: confira seus dados antes de realizar o cadastro.</mark></p>
+                <P>Para dúvidas, entre em contato:</P>
+
+
+
+                <legend>Preferências de Contato</legend>
+                <label for="hora-cadastro">Melhor horário para contato:</label>
+                <input type="time" name="hora-cadastro" id="hora-cadastro "><br><br>
+
+                <label for="Data-disponivel:">Data disponivel para iniciar um projeto</label>
+                <input type="date" name="Data-disponivel" id="Data-disponivel" required><br><br>
+
+        </div>
+
+<section class="card">
+<H2>Clique aqui para realizar o cadastro</H2>
+<a class= "entrar" href="inicio.html">Cadastrar</a>
+</section>
+</body>
+</html>

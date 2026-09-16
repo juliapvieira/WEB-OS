@@ -1,0 +1,373 @@
+/* ==============================================
+CORES DO SITE
+================================================*/
+/* Vamos colocar todas as cores nas variaveis e ja vai alterar automatico  */
+
+
+ /* root serve p manter uma configuração padrão. adicionar cores, tudo aquilo que vc vai reutilizar, tamanho da fonte */
+:root {
+    --cor-texto-escuro: #7bb0db;
+    --cor-creme: #ffffff;
+    --cor-fundo-pagina: #e2fbfcb9;
+    --cor-terracota: #1794c5;
+    --cor-terracota-escuro: #3a4ad4;
+    --cor-carvao: #36454f;
+    --cor-linha: rgba(36, 34, 34, 0.1);
+    /* TODAS AS CORES UTILIZADAS NO SITE ESTÁ AQUI :) */
+}
+
+main {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+
+
+}
+.card1{
+width: 180px;
+height: 140px;
+background-color: rgb(85, 74, 236);
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease;
+
+}
+.card2{
+width: 180px;
+height: 140px;
+background-color: rgb(88, 236, 74);
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease;
+
+}
+.card3{
+width: 180px;
+height: 140px;
+background-color: rgb(245, 214, 79);
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease;
+
+}
+.card4{
+width: 180px;
+height: 140px;
+background-color: rgb(236, 74, 74);
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(141, 48, 48, 0.2);
+}
+
+.card h2 {
+    margin bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f1e6e6;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+
+}
+/*===================================
+ RESET BÁSICO 
+ ====================================*/
+ /* QUANDO QUISER APLICAR ALGO PRA TUDO NO SITE USA O ASTERISCO  */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html {
+    scroll-behavior: smooth; 
+    /* quando clicamos em um link da página, tipo #pecas, a pagina rola suavemente até lá em vez de "pular e ficar uma linha grande" */
+ }
+
+ body {
+    font-family: 'Work Sans', 'poppins';
+    color: var(--cor-texto-escuro);
+    background-color: var(--cor-fundo-pagina);
+    line-height: 1.6;
+    margin-left: 220px;
+ }
+
+a {
+    
+    color: inherit; 
+    /* faz com que o link herde a cor do texto ao redor, em vez do azul padrão navegador  */
+    text-decoration: none;
+
+}
+
+/* ===============================
+BOTÕES
+==================================*/
+
+
+.botao {
+    display: inline-flex;
+/* vira um flexbox, mas continua "na linha" do yexyo, não ocupa a linha inteira */
+    padding: 0.5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    /* Deixa a mudança de cor e subir no hover suave, em vez de instantânea */
+
+}
+
+.botao-preenchido {
+    background-color: var(--cor-terracota);
+    color: var(--cor-creme);
+}
+
+
+.botao-preenchido:hover {
+    background-color: var(--cor-terracota-escuro);
+    transform: translateY(-2px);
+    /* faz o botão "subir" quando passa o mouse por cima */
+}
+.botao-contorno {
+    border: 1.5px solid var(--cor-terracota);
+    color: var(--cor-terracota);
+}
+.botao-claro {
+    background: var(--cor-fundo-pagina);
+    color: var(--cor-terracota);
+}
+
+/* ===============================
+MENU DO TOPO
+================================== */
+
+.topo {
+    background-color: #1794c5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #083966;
+    border-right: 1px solid #ccc;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topo nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.topo-conteudo {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px 40px;
+
+}
+
+.marca {
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.menu {
+    display: flex;
+    gap: 36px;
+
+}
+
+/* BOTÃO DE AGENDAR VISITA */
+.botao-menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cor-fundo-pagina);
+    background: var(--cor-texto-escuro);
+    padding: 10px 20px;
+    border-radius: 3px;
+
+}
+/* BLOCK */
+.block {
+    display: block;
+    margin-bottom: 90%;
+    background-color: rgb(182, 222, 238);
+    border: 3px solid rgb(159, 211, 253);
+    padding: 10px;
+    margin: 30px 0;
+    size: 100%;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+th {
+    text-align: left;
+    padding: 12px;
+    background-color: #b7cbdf;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+}
+
+.andamento,
+.concluida,
+.pendente {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.andamento {
+    background-color: #fff0c2;
+    color: #d99000;
+}
+
+.concluida {
+    background-color: #d5f5e3;
+    color: #168653;
+}
+
+.pendente {
+    background-color: #d8dce4;
+    color: #475569;
+}
+
+.container {
+    justify-content: flex-end;
+    align-items: end;
+    display: flex;
+}
+
+ h1,h2,h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.15;
+    
+ }
+p {
+    color: var(--cor-terracota);
+    max-width: 46ch;     
+    /* Largura máxima do parágrafo */
+}
+
+
+/* ============================
+MENU DO TOPO
+=============================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+/* se a tela for pequena, os itens quebram a linha de baixo em vez de espremer  */
+    gap: 60px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 40px 110px;
+    }
+
+    .hero texto {
+    flex: 1 1 480px;
+        /* 1= pode crescer para ocupar espaço extra */
+        /* 1= pode encolher se faltar espaço */
+        /* 480px = tamanho "ideal de partida antes de crescer ou encolher" */
+    }
+
+    .hero-texto h1 {
+    font-size: 44px;
+    margin-bottom: 22px;
+
+    }
+
+    .hero p {
+    font-size: 18px;
+    margin-bottom: 34px;
+
+    }
+
+    .hero-botoes {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+    }
+
+    .hero-imagem {
+    flex: 1 1 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .card{
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+
+
+}
+
+.entrar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0992ec;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+
+}
+
+
+/* 
+    .desenho-torno {
+    width: 100px;
+
+    } */
