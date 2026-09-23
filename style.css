@@ -8,19 +8,45 @@ CORES DO SITE
 :root {
     --cor-texto-escuro: #7bb0db;
     --cor-creme: #ffffff;
-    --cor-fundo-pagina: #e2fbfcb9;
+    --cor-fundo-pagina: #ebedff;
     --cor-terracota: #1794c5;
     --cor-terracota-escuro: #3a4ad4;
     --cor-carvao: #36454f;
     --cor-linha: rgba(36, 34, 34, 0.1);
     /* TODAS AS CORES UTILIZADAS NO SITE ESTÁ AQUI :) */
 }
+.input-login {
+display: flex;
+justify-content: space-between;
+width: 100PX;
+align-items: center;
+flex-wrap: nowrap;
+font-size: 0.9rem;
+font-weight: 500;
+}
+form .input-login + .input-login {
+margin-top: 1.5rem;
 
+.label-login {
+display: flex;
+justify-content: space-between;
+width: 100px;
+flex-wrap: nowrap;
+align-items: center;
+font-size: 0.9rem;
+font-weight: 500;
+}
+}
 main {
     justify-content: space-evenly;
     display: flex;
     align-items: center; 
     gap: 20px;
+}
+
+.card {
+text-align: center;
+justify-content: center;
 
 
 }
@@ -57,33 +83,47 @@ transition: transform 0.3s ease;
 .card4{
 width: 180px;
 height: 140px;
-background-color: rgb(236, 74, 74);
+background-color: rgb(255, 35, 35);
 border-radius: 10px;
 padding: 20px;
 text-align: center;
 transition: transform 0.3s ease;
 
 }
+.cards {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(141, 48, 48, 0.2);
+.card {
+    width: 180px;
+    height: 140px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .card h2 {
-    margin bottom: 10px;
+    margin: 0;
+    color: rgb(153, 29, 29);
+    font-size: 22px;
 }
 
-.card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #f1e6e6;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-weight: bold;
+.card p {
+    margin: 5px 0 20px;
+    color: rgb(14, 2, 2);
+    font-size: 18px;
+}
 
+.card span {
+    color: rgb(10, 9, 85);
+    font-size: 15px;
 }
 /*===================================
  RESET BÁSICO 
